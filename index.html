@@ -384,7 +384,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20v14H2z"></path><path d="M8 21h8M12 17v4"></path></svg>
         <span class="tab-label">Revision</span>
       </button>
-      <button class="tab active" data-tab="homework" role="tab">
+      <button class="tab" data-tab="homework" role="tab">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
         <span class="tab-label">Homework</span>
       </button>
@@ -392,7 +392,7 @@
   </div>
 
   <!-- HOME -->
-  <section class="panel" id="panel-home">
+  <section class="panel active" id="panel-home">
     <div class="home-hero">
       <h2>Welcome to your Year 10 Higher Maths hub</h2>
       <p id="page-intro">Welcome to your Year 10 Higher Maths hub. Use the tabs above to find lesson slides (PowerPoint), worksheets, assessments, revision materials and homework.&nbsp;</p>
@@ -411,7 +411,7 @@
   <!-- LESSON RESOURCES -->
   <section class="panel" id="panel-lessons">
     <div class="roadmap">
-      <div class="roadmap-header">
+      <div class="roadmap-header">h
         <h3>Your year at a glance</h3>
         <p>Click any block to jump straight to its resources below.</p>
       </div>
@@ -760,7 +760,7 @@
   </section>
 
   <!-- HOMEWORK -->
-  <section class="panel active" id="panel-homework">
+  <section class="panel" id="panel-homework">
     <div class="big-grid" id="homework-grid"><div class="big-card pink"><div class="card-stripe"></div><div class="body"><h3>Homework</h3><p class="sub">Set on Sparx Maths Weekly</p><a class="res-link disabled" href="#" target="_blank" rel="noopener"><span class="icon-dot assessment"></span><span class="link-label">Open this week's homework</span></a></div></div><div class="big-card blue"><div class="card-stripe"></div><div class="body"><h3>Additional</h3><p class="sub"><br></p></div></div></div>
   </section>
 
@@ -823,5 +823,5 @@
             setTimeout(function () { card.classList.remove('highlight'); }, 1500);
           });
         });
-      })();
+      activateTab('home');    })();
     </script></body></html>
